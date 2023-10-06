@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Bundle</title>
+</head>
+<body>
+    <h1>Create a Bundle</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ bundle_form.as_p }}
+        {{ link_form.as_p }}
+        <button type="submit">Create Bundle</button>
+    </form>
+</body>
+</html>
